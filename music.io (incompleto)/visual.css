@@ -1,0 +1,70 @@
+body{
+   
+    background:rgb(74, 39, 155);
+    font: normal 20px courier new;
+    color: rgb(252, 138, 252);
+
+
+
+}
+        header{
+            background: rgba(213, 16, 231, 0.37);
+            background-image:url(https://wallpapercave.com/wp/wp4989892.jpg);
+                }
+
+                h1{
+                    text-align: center;
+                    text-shadow: 2px 2px 5px rgb(225, 0, 255);
+
+                }
+
+
+
+div#gen{
+margin-top: 10px;
+
+}
+        section{
+                  text-align: center;
+                  margin: auto;
+                  padding: 15px;
+                  height: 600px;
+                  width: 500px;
+                  background: rgb(14, 0, 32);
+                  border-radius: 20px;
+
+               }
+
+ 
+
+
+h2{
+
+    text-shadow: 5px 4px 10px rgb(131, 0, 131) ;
+    
+    }
+
+input{
+    color: rgb(245, 169, 255);
+
+    background:rgba(213, 16, 231, 0.37);
+    border-radius: 20px;
+
+
+
+}
+
+
+img{
+
+
+
+}
+
+footer{
+        margin-top: 10px;
+        font: italic 20 px ;
+        color: rgb(248, 196, 255);
+        text-align: center;
+
+}

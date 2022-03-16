@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+   
+
+    <div id="calculadora">
+     
+        <div id="tela">
+            <p id="visor"> </p>
+        </div>
+
+        <div id="botoes"> 
+            <div id="linha">
+                <input type="button" class="btn btn-dark" value="1" id="1" onclick="selecionar(1)">
+                <input type="button" class="btn btn-dark" value="2" id="2" onclick="selecionar(2)">
+                <input type="button" class="btn btn-dark" value="3" id="3" onclick="selecionar(3)">
+                
+                <input type="button" class="btn btn-dark" value="+" id="soma" onclick="operacao('+')">
+
+            </div>
+
+            <div id="linha">
+
+                <input type="button" class="btn btn-dark" value="4" id="4" onclick="selecionar(4)">
+                <input type="button" class="btn btn-dark" value="5" id="5" onclick="selecionar(5)">
+                <input type="button" class="btn btn-dark" value="6" id="6" onclick="selecionar(6)">
+                
+                <input type="button" class="btn btn-dark" value="x" id="multi" onclick="operacao('x')">
+
+            </div>
+
+            <div id="linha">
+                <input type="button" class="btn btn-dark" value="7" id="7" onclick="selecionar(7)">
+                <input type="button" class="btn btn-dark" value="8" id="8" onclick="selecionar(8)">
+                <input type="button" class="btn btn-dark" value="9" id="9" onclick="selecionar(9)">
+                
+                <input type="button" class="btn btn-dark" value="/" id="divi" onclick="operacao('/')">
+                
+   
+
+            </div>
+
+            <div id = 'linhafim'>
+                <input type="button" class="btn btn-dark" value="=" id="igual" onclick="resultado()">
+                <input type="button" class="btn btn-dark" value="-" id="menos" onclick="operacao('-')">
+                <input type="button" class="btn btn-dark" value="DEL" id="del" onclick="apagar()">
+            </div>
+          
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <footer> Feito Por Ariston Cândido :D</footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

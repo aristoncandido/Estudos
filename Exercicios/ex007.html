@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            color: teal;
+            background: turquoise;
+
+        }
+
+        input {
+
+            font: normal 18pt Arial;
+            width: 100px;
+            color: violet;
+            background: black;
+        }
+
+        div#res {
+            color: rgb(0, 102, 54);
+            margin-top: 20px;
+
+        }
+
+        input#m {
+
+
+            margin-bottom: 20px;
+            line-height: 200px;
+            font: normal 18pt Arial;
+            width: 130px;
+            color: violet;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Somando Valores </h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onkeydown="somar()">
+    <input id='m' type="button" value="Multiplicar" onclick="multi()">
+    <input type="datetime" name="dt" id="dt"> 
+    <div id='res'>
+       Resultado
+    </div>
+    <div id='hj'> Data de hoje </div>
+
+    <script>
+
+        function somar() {
+
+            var tn1 = document.querySelector('input#txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            var res = document.getElementById('res')
+            var d = document.getElementById('dt')
+            var hj = document.getElementById('hj')
+
+
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var d2 = String(d.value)
+            var s = n1 + n2
+            
+
+            hj.innerHTML = `data de hoje é ${d2}`
+            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`
+            
+
+
+
+        }
+
+        function multi() {
+
+            var tn1 = document.querySelector('input#txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            var res = document.getElementById('res')
+
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 * n2
+
+            res.innerHTML = `O produto  entre ${n1} e ${n2} é ${s}`
+
+       
+        }
+
+    </script>
+
+
+</body>
+
+</html>

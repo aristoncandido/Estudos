@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>AUTOHELL</title>
+</head>
+<style>
+    body {
+
+        background: rgb(59, 59, 218);
+        font: normal 20px Arial;
+        color: rgb(128, 191, 255);
+        height: 100px;
+        width: 300px;
+        text-align: center;
+
+    }
+
+    input#fim {
+        background: rgb(32, 181, 250);
+        color: mediumblue;
+        margin-top: 10px;
+    }
+
+    p {
+        background: rgb(7, 74, 97);
+        font: normal 20px Arial;
+
+    }
+
+    input {
+        color: mediumturquoise;
+        background: rgb(7, 74, 97);
+        ;
+
+
+    }
+
+    div {
+        margin-top: 10px;
+        color: mediumturquoise;
+        font: normal 15px Arial;
+
+
+    }
+</style>
+
+<body>
+    <H1>
+        Bem vindos à AUTOHELL
+    </H1>
+    <p> Nossas opções de Automóveis são:</p>
+    <input type="button" value="Hatch" id="hat" onclick="selecionar1(sele)">
+    <input type="button" value="Sedan" id="sed" onclick="selecionar2(sele)">
+    <input type="button" value="Moto" id="mot" onclick="selecionar3(sele)">
+    <input type="button" value="Caminhonete" id="cam" onclick="selecionar4(sele)">
+    <input type="button" value="COMPAR" id="fim" onclick="comprar()">
+    <div id="escolha"> <strong>NENHUMA OPÇÃO SELECIONADA</strong> </div>
+
+</body>
+<script>
+
+    var sele = "AUTOMOVEL";
+
+
+
+
+
+    function selecionar1(x) {
+
+
+
+        var hatch = document.getElementById("hat")
+        var esco = document.querySelector("div#escolha")
+
+        sele= "hatch"
+
+        esco.innerHTML = `<strong>HATCH SELECIONADO </strong>`
+
+
+
+        return x;
+
+    }
+    function selecionar2(x) {
+
+
+        var sedan = document.getElementById("sed")
+        var esco = document.querySelector("div#escolha")
+
+
+        sele = "sedan"
+        esco.innerHTML = `<strong>SEDAN SELECIONADO</strong>`
+
+
+
+        return x;
+
+    }
+    function selecionar3(x) {
+
+
+        var moto = document.getElementById("mot")
+        var esco = document.querySelector("div#escolha")
+
+
+        sele = "moto"
+        esco.innerHTML = `<strong>MOTO SELECIONADO</strong>`
+
+        return x;
+
+
+    }
+
+    function selecionar4(x) {
+
+
+        var caminhonete = document.getElementById("cam")
+        var esco = document.querySelector("div#escolha")
+
+        sele = "caminhonete"
+        esco.innerHTML = '<strong>CAMINHONETE SELECIONADO</strong>'
+
+
+
+
+        return x;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    function comprar() {
+
+
+
+        var esco = document.querySelector("div#escolha")
+
+
+
+        esco.innerHTML += `<p>Parabéns<strong> você adquiriu ${sele} </strong> compra efetada com sucesso!</p>`
+
+
+
+    }
+
+</script>
+
+</html>

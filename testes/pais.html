@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Seu país</title>
+
+    
+</head>
+<style>
+
+ 
+ h1{
+    color:chartreuse;
+
+
+ }
+
+   div{
+
+        font: normal 20px Arial;
+        color: chartreuse;
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+   }
+
+
+
+
+
+</style>
+
+
+
+<body>
+    <H1>Descubra sua Nacionalidade</H1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" id="bt" onclick="nacionalidade()">
+    <div id='n'>Seu país é :</div>
+     <div id ='naci'>Sua Nacionalidade é :</div>
+</body>
+<script>
+    
+    document.body.style.background ='grey'
+
+
+
+    function nacionalidade() {
+
+        var n = document.getElementById('txtpais')
+        var res = document.querySelector('div#n')
+        var naci = document.querySelector('div#naci')
+
+      
+        var resultado = n.value
+
+        res.innerHTML = `Seu País é : <strong> ${resultado}</strong>`
+
+
+        if (resultado == 'Brasil') {
+
+            naci.innerHTML += '<p>Você é Brasileiro</p>'
+
+        } else{
+
+            naci.innerHTML += '<p>Você é gringo</p>'
+
+        }
+
+
+       
+
+
+
+
+    }
+
+
+
+
+
+
+
+</script>
+
+</html>

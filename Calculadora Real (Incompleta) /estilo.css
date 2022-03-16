@@ -1,0 +1,70 @@
+div#linha{
+
+ margin-top: 5px;
+
+
+}
+
+body{
+
+    margin-top: 15%;
+    text-align: center;
+    background:mediumaquamarine;
+    font:  Normal 35px Arial ;
+    color: white;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.555);
+    
+
+
+
+}
+
+input#igual{
+    margin-top: 5px;
+    text-align: center;
+    width: 60px;
+}
+input#divi{
+
+
+    width: 35px;
+
+
+
+}
+
+input#menos{
+
+
+    margin-top: 5px;
+    width: 35px;
+    height: 38px;
+}
+
+input{
+
+    border-radius: 2px;
+    box-shadow: 2px 4px 7px rgba(53, 52, 52, 0.562);
+
+
+}
+
+input#del{
+
+    margin-top: 5px;
+    height: 38px;
+    width: 55px;
+
+
+}
+
+footer{
+
+    margin-top: 20px;
+  
+    font: italic 15px Arial;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.432);
+
+
+}
