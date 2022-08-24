@@ -1,0 +1,35 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 0, 255);
+
+
+}
+
+section.bg{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url("synthwave.jpg");
+    
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+body{
+
+    
+}
+section{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    text-shadow: 1pt 5px 5px rgba(0, 0, 0, 0.384);
+    box-shadow: 10px 1px 5px black;
+
+}
